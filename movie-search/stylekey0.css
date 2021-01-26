@@ -1,0 +1,91 @@
+.wrapper{
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  user-select: none;
+  transition: bottom 0.4s;
+  z-index: 99999;
+  padding: 5px 0;
+    width: 880px;
+    margin: 40px 0;
+  margin-left: -440px;
+}
+
+
+.keyboard{
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30px;
+    background: linear-gradient(to top left, powderblue, pink);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+.key{
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 4px;
+    width: 50px;
+    height: 50px;
+      opacity: 0.7;
+      background: rgba(139, 0, 139, 0.2);
+      color: #ffffff;
+      font-size: 1.05rem;
+      outline: none;
+}
+.key:hover {
+  opacity: 1;
+    cursor: pointer;
+}
+
+.pressed{
+    background-color: #505050;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+.backspace{
+    width: 129px;
+}
+.tab{
+    width: 66px;
+}
+.capslock{
+    width: 110px;
+}
+.delete{
+    width: 59px;
+}
+.enter{
+    width: 123px;
+}
+.MetaLeft{
+  background-image: url(resources/change.png);
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+.space{
+    width: 386px;
+}
+.shift{
+    width:116px;
+}
+.ctrl{
+    width:62px;
+}
+
+
+
+@media (max-width: 1079px) and (min-width: 730px) { /* для разрешения экрана от 730 до 1079 пикселей */
+
+  .wrapper{
+    display: none;
+  }
+}
+
+@media (max-width: 729px){ /* для разрешения экрана  до 729 пикселей */
+
+  .wrapper{
+    display: none;
+  }
+}

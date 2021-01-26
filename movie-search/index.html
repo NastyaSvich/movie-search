@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+<link href="stylekey.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+   <h1>MovieSearch</h1>
+    </div>
+  </header>
+
+  <main>
+    <div id='container'>
+      <div id = "klava"><img src = "resources/keyboard.png" class='klava' ></img></div>
+      <div class='cell'><input type='search' id ="search" autocomplete="off" autofocus placeholder='Search movie'></div>
+      <div class='load fade' id = "hide"><div class="spinner"></div></div>
+      <div class='cell'><button  onclick="ShowSelection()" class='button append' id = "click">Search</button></div>
+    </div>
+    <div id = "vivod"></div>
+    <div class="swiper-container" id = "position">
+        <div class="swiper-wrapper" id = "slider"> </div>
+        <div class="swiper-pagination" id="points"></div>
+        <div class="swiper-button-next" id="next" onclick="pages()"></div>
+        <div class="swiper-button-prev" id="prev" onclick="prev()"></div>
+      </div>
+  </main>
+
+  <footer class="footer-distributed">
+    			<div class="footer-right">
+  				<a href="https://github.com/NastyaSvich">NastyaSvich<img width="40px" height="40px" src="resources/github.png" align="left" alt=""</img></a>
+    			</div>
+    			<div class="footer-left">
+  				<p class = "School">RS School 2020q1</p>
+  			</div>
+  </footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="scripts/films.js"></script>
+<script src="scripts/swiper.js"></script>
+<script src="scripts/keyboard.js" defer></script>
+<script src="scripts/button.js" defer></script>
+<script src="scripts/hide.js" defer></script>
+</body>
+</html>
